@@ -6,7 +6,7 @@ import Testimonial from "../../sections/Testimonial/Testimonial"
 import Insights from "../../sections/Insights/Insights"
 import Approach from "../../sections/Approach/Approach"
 import Advisory from "../../sections/Advisory/Advisory"
-import Platforms from "../../sections/Platforms/Platforms"
+
 
 // import { use } from "react"
 import "./Home.scss"
@@ -22,7 +22,7 @@ function Home() {
       <Advisory />
       <Testimonial />
       <Insights />
-      <Platforms />
+      
 
       
 
