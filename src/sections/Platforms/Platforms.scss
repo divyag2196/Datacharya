@@ -1,0 +1,29 @@
+@use "../../css-config/mixins.scss" as *;
+
+   
+
+    #Platforms {
+
+       min-height: 100vh;
+    background-image: url("../../assets/platform_page_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  .MuiTabs-root {
+    margin-bottom: 20px;
+  }
+
+  .MuiTab-root {
+    text-transform: none;
+    font-weight: 500;
+  }
+
+  .Mui-selected {
+    color: #6c3cff !important;
+  }
+
+  .MuiTabs-indicator {
+    background-color: #6c3cff;
+  }
+}
+

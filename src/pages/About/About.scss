@@ -1,0 +1,195 @@
+@use "../../css-config/mixins.scss" as *;
+#about{
+    min-height: 100vh;
+    background-image: url("../../assets/about_page_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    
+    .box1{
+        background-image: url("../../assets/About_hero.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    
+    padding: 50px 0;
+    @include md{
+        background-size: 40%;
+
+    }
+    @include lg{
+        background-size: 27%;
+        padding: 129px 0 192px;
+    }
+
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .hero{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                @include lg{
+                    padding-left: 200px;
+                    
+                }
+            }
+
+            h1{
+
+                width: 100%;
+                @include md{
+                    width: 744px;
+                }
+               
+                
+            }
+        }
+    }
+
+    .box2{
+        display: flex;
+        flex-direction: column;
+         background-image: url("../../assets/about_rangoli.png");
+    background-repeat: no-repeat;
+    background-position: 100% 150px;
+    background-size: 20%;
+        .container{
+            .sec1{
+                display:flex;
+                flex-direction: column;
+                gap:20px;
+                .sec1box{
+                    background-image: url("../../assets/about_vector.png");
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: contain;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    h2{
+                        width: 100%;
+                        color: #33419D;
+                        @include lg{
+                            width: 747px;
+                        }
+
+                    }
+                }
+                .sec1box2{
+                    margin: auto;
+                    p{
+                        width: 100%;
+                        color: #33419D;
+                        @include lg{
+                            width: 648px;
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        .infobox{
+            padding: 166px 0;
+            .info_box1{
+                h3{
+                    color: #3D3C3C;
+
+                }
+            }
+            .info_box2{
+                padding: 76px 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 80px 10px;
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    img{
+                        width: 45px;
+                        height: 45px;
+                    }
+                    img.rotateimg{
+                        transform: rotate(45deg);
+                    }
+                    
+                    p{
+                        color: #33419D;
+
+                    }
+                    h4{
+                        color: #33419D;
+                        width: 360px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .client-slider{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3{
+            color: #000;
+        }
+    }
+
+   .testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 41px 0;
+    gap: 25px;
+    @include lg{
+        padding: 141px 0;
+        gap: 25px;
+    }
+        .top_quate{
+        font-family: "Playfair";
+        font-weight: 400;
+        color: #33419D;
+        font-size: 200px;
+        line-height: 30px;
+
+        vertical-align: bottom;
+
+        }
+
+        h3{
+        width: 300px;
+        color: #33419D;
+            @include lg{
+            width: 522px;
+            }
+           
+
+        }
+        h6{
+            width: 300px;
+            color: #33419D;
+            @include lg{
+                width: 522px;
+            }
+        }
+        button{
+            margin-top: 50px;
+            @include md{
+                margin-top: 100px;
+            }
+            @include lg{
+                margin-top: 140px;
+            }
+        }
+    }
+}

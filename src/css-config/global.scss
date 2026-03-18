@@ -1,0 +1,415 @@
+@use "./mixins.scss" as *;
+/* ============================= */
+/* GOOGLE FONT */
+/* ============================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+
+/* ============================= */
+/* ROOT VARIABLES */
+/* ============================= */
+
+:root {
+
+  /* Colors */
+  --purple-dark: #1a0033;
+  --purple: #4a148c;
+  --purple-light: #7b1fa2;
+
+  --orange: #ff6b35;
+  --peach: #ffc299;
+
+  --cyan: #00d4ff;
+  --blue: #0077be;
+  --blue-dark: #001f3f;
+
+  --yellow: #FFD700;
+
+  --blue: #33419D;
+
+
+  /* Text */
+  --text-white: #ffffff;
+  --text-muted: rgba(255,255,255,0.7);
+
+  /* Glass */
+  --glass-bg: rgba(255,255,255,0.1);
+  --glass-border: rgba(255,255,255,0.2);
+
+  /* Layout */
+  --container-width: 1200px;
+  --section-padding: 6rem;
+
+}
+
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Nunito Sans";
+  // font-family:'Inter', sans-serif;
+  background:#000;
+  color:white;
+  line-height:1.6;
+}
+
+.my-fluid-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container{
+  max-width:100%;
+  margin:auto;
+  padding:0 2rem;
+  @include xl{
+    max-width:var(--container-width);
+    
+  }
+}
+
+.text-center{
+  text-align: center;
+}
+
+.seprator120{
+  width: 120px;
+  border: solid 4px #FFFFFF;
+  height: 0px;
+  margin: 10px 0;
+  
+  // @include md{
+
+  // }
+  // @include lg{
+
+  // }
+  // @include xl{
+    
+  // }
+}
+
+.elementor-btn{
+  // width: 150;
+  // height: 50;
+  border-radius: 25px;
+  background: radial-gradient(88.6% 328.35% at 17.4% 5.68%, #FEC272 6%, #FEBB5D 9%, #FEB243 13%, #FEAC30 17%, #FEA924 21%, #FEA821 26%, #FE6700 71.63%, #FF5200 100%);
+
+  border: none;
+  padding:13px 36px;
+  color: #ffffff;
+}
+.elementor-btn-shadow{
+  // width: 150;
+  // height: 50;
+  border-radius: 25px;
+  background: radial-gradient(88.6% 328.35% at 17.4% 5.68%, #FEC272 6%, #FEBB5D 9%, #FEB243 13%, #FEAC30 17%, #FEA924 21%, #FEA821 26%, #FE6700 71.63%, #FF5200 100%);
+
+  border: none;
+  padding:13px 36px;
+  color: #ffffff;
+  box-shadow: 0px 16px 32px 4px #0C0C0D33;
+
+}
+
+
+/* ============================= */
+/* TYPOGRAPHY  */
+/* ============================= */
+
+.data-title{
+  font-family: "Nunito Sans";
+  font-weight: 200;
+  font-size: 23px;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  @include md{
+    font-size: 52px;
+  line-height: 52px;
+
+  }
+  @include lg{
+    font-size: 62px;
+  line-height: 62px;
+
+  }
+  @include xl{
+    font-size: 72px;
+    line-height: 72px;
+
+  }
+}
+.Data-sub-title{
+  font-family: "Nunito Sans";
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  @include md{
+    font-size: 30px;
+    line-height: 34px;
+  }
+  @include lg{
+    font-size: 30px;
+    line-height: 34px;
+  }
+  @include xl{
+    font-size: 30px;
+    line-height: 34px;
+    
+  }
+}
+.body-16-24{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  @include md{
+
+  }
+  @include lg{
+
+  }
+  @include xl{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.sub-head-22-30{
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  @include md{
+
+  }
+  @include lg{
+
+  }
+  @include xl{
+    
+  }
+}
+
+.head-64-64{
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  @include lg{
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+
+.Data-200-48-48{
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  @include md{
+    font-size: 35px;
+    line-height: 35px;
+  }
+  @include lg{
+    font-size: 38px;
+    line-height: 38px;
+  }
+  @include xl{
+    font-size: 48px;
+    line-height: 48px; 
+  }
+}
+
+.Data-200-64-64{
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 50px;
+  @include md{
+    font-size: 54px;
+    line-height: 60px;
+  }
+  @include lg{
+    font-size: 64px;
+    line-height: 64px;
+  }
+  
+}
+
+.Data-200-64-70{
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 50px;
+  @include md{
+    font-size: 54px;
+    line-height: 60px;
+  }
+  @include lg{
+    font-size: 64px;
+    line-height: 70px;
+  }
+  
+}
+
+.Data-200-64-72{
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 50px;
+  @include md{
+    font-size: 54px;
+    line-height: 60px;
+  }
+  @include lg{
+    font-size: 64px;
+    line-height: 72px;
+  }
+  
+}
+
+.Data-200-64-80{
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 50px;
+  @include md{
+    font-size: 54px;
+    line-height: 60px;
+  }
+  @include lg{
+    font-size: 64px;
+    line-height: 80px;
+  }
+  
+}
+
+.Data-300-22-30{
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  @include md{
+
+  }
+  @include lg{
+
+  }
+  @include xl{
+    
+  }
+
+}
+.Data-300-54-54{
+  font-weight: 300;
+  font-size: 54px;
+  line-height: 54px;
+  @include md{
+
+  }
+  @include lg{
+
+  }
+  @include xl{
+    
+  }
+
+}
+
+.Data-400-22-30{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  @include md{
+
+  }
+  @include lg{
+
+  }
+  @include xl{
+    
+  }
+}
+
+
+.Data-400-24-34{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  @include md{
+
+  }
+  @include lg{
+
+  }
+  @include xl{
+    
+  }
+}
+.Data-400-24-70{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 70px;
+  @include md{
+
+  }
+  @include lg{
+
+  }
+  @include xl{
+    
+  }
+}
+
+.Data-600-22-30{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  @include md{
+
+  }
+  @include lg{
+
+  }
+  @include xl{
+    
+  }
+}
+
+.Data-700-18-24{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  @include md{
+
+  }
+  @include lg{
+
+  }
+  @include xl{
+    
+  }
+}
+.Data-800-72-72{
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 52px;
+  @include md{
+    font-size: 62px;
+    line-height: 62px;
+  }
+  @include lg{
+    font-size: 72px;
+    line-height: 72px;
+  }
+  @include xl{
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+
+
+

@@ -1,0 +1,59 @@
+@use "../../css-config/mixins.scss" as *;
+.testimonial_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .testimonial-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+        background: linear-gradient(287.68deg, #dfeffc1a -80.85%, rgba(159, 218, 252, 0.1) -36.25%, rgba(71, 188, 253, 0.1) -4.39%, rgba(63, 138, 214, 0.1) 71.77%);
+        box-shadow: 0 16px 32px 4px #0C0C0D33;
+        gap: 20px;
+        @include lg{
+            flex-direction: row;
+        }
+
+        @include lg{
+            margin-top: 77px;
+            width: 1128px;
+            height: 420px;
+            border-radius: 40px;
+            padding: 77px;
+
+        }
+        .testimonial-card1{
+            img{
+                width: 264px;
+                height: 264px;
+            }
+        }
+        .testimonial-card2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .testimonial-desc{
+                padding: 15px 0 25px;
+            }
+            .testimonial-client-name{
+                padding: 15px 0;
+            }
+
+            .top_icon{
+                width: 79px;
+                height: 44px;
+            }
+
+             .bottom_icon{
+                width: 50px;
+                height: 25px;
+               
+             }
+        }
+
+
+    }
+}

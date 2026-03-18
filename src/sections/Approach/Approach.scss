@@ -1,0 +1,76 @@
+@use "../../css-config/mixins.scss" as *;
+.approach_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .app_box{
+        background-image: url("../../assets/approach_bg.png");
+        background-size: contain;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @include md{
+            background-size: cover;
+            background-position: center;
+        }
+        @include lg{
+            width: 1241px;
+            height: 881px;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            padding: 115px 150px;
+        }
+        .box1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include md{
+                align-items: flex-start;
+            }
+            @include lg{
+                gap: 60px;
+            }
+
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 50px 0;
+            gap: 20px;
+            align-items: center;
+            @include md{
+                flex-direction: row;
+                position: relative;
+                align-items: center
+            }
+            img{
+                max-width: 50%;
+                // width: 376px;
+                // height: 633px;
+                height: auto;
+                @include md{
+                     width: 376px;
+                    height: 633px;
+                }
+                @include lg{
+                     width: 376px;
+                    height: 633px;
+                }
+                @include xl{
+                     width: 376px;
+                    height: 633px;
+                }
+
+            }
+
+        }
+
+    }
+}

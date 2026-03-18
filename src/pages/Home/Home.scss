@@ -1,0 +1,8 @@
+@use "../../css-config/mixins.scss" as *;
+#home{
+    min-height: 100vh;
+    background-image: url("../../assets/home_bg.webp");
+    background-repeat: no-repeat;
+    // background-position: bottom left;
+    background-size: cover;
+}
